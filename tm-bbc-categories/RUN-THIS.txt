@@ -1,0 +1,27 @@
+export folder=topics-2
+
+# 1 | set result folder
+mkdir tests/$folder
+
+# 2 | create a section mapping CSV in the folder
+
+
+# 3 | ... and use the mapping to set new categories and subset the data
+python 2-reset-categories.py $folder
+
+# 4 | segment articles
+python 3-segment-articles.py tests/topics-2/bbc-data-201601-201606_sub.tab tests/topics-2/out/ 2
+
+# 5 | plot it 
+Rscript ../../plot.R 
+
+
+
+
+
+
+# call script for real
+python segment_articles.py datasets/real/subcat_500.tab results/out1 16
+
+# create plot
+Rscript plot.R
