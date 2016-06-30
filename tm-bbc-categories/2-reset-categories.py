@@ -4,7 +4,7 @@ import re
 # argv[0] = script
 # argv[1] = test folder
  
-IN = open('datasets/bbc-dataset-201601-201606.tab', 'r')
+IN = open('../data-from-Juicer/bbc-dataset-201601-201606.tab', 'r')
 MAP = open('tests/'+ sys.argv[1] +'/categories_mapped.csv', 'r')
 OUTSUB = open('tests/'+ sys.argv[1] +'/bbc-data-201601-201606_sub.tab', 'w')
 
