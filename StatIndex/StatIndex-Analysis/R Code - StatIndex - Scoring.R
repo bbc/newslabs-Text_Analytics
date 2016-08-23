@@ -39,7 +39,7 @@ install.packages("ggplot2")
 library(ggplot2)
 
 # Visualise statistical terms by frequency
-ggplot(order, aes(x=content, y=frequency)) + geom_bar(stat='identity') + coord_flip()
+ggplot(order, aes(x=content, y=frequency)) + geom_bar(stat='identity', col="#ffcc00") + coord_flip()
 
 # Use of advanced statistics (complexity) - Scoring needs more research/testing
 # Merge the dataframe with statistical dictionary to determine
@@ -51,6 +51,8 @@ df_merged <- df_merged[!apply(df_merged, 1, function(x) {df_merged$frequency == 
 
 # Visualise statistical words used in content
 ggplot(df_merged, aes(x=content, y=frequency)) + geom_bar(stat='identity') + coord_flip()
+theme(axis.title=element_blank()) + ggtitle(expression(atop("Frequency of Statistical Insights"))) + 
+theme(plot.title = element_text(size=20, hjust=0, color="black"))
 
 # SCORE 4 - Find mean based on a score that measures how advanced the statistical word is
 complexity <- mean(df_merged$score_3, na.rm=TRUE)
