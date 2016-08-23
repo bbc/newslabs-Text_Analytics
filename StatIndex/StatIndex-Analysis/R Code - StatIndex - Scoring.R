@@ -33,7 +33,7 @@ print(Stat_Score_3)
 
 # Order by frequency of statistical term
 order <- Terms[order(Terms$frequency),]
-write.csv(freqs, "C:/Users/boltol02/Projects/statistical_freqs.csv")
+write.csv(freqs, "statistical_freqs.csv")
 
 install.packages("ggplot2")
 library(ggplot2)
