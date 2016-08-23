@@ -38,6 +38,7 @@ write.csv(freqs, "statistical_freqs.csv")
 install.packages("d3heatmap")
 library(d3heatmap)
 
+# Visualise the frequency of statistical terms with a D3 heatmap
 a <- d3heatmap(order, scale="column", dendrogram="none", color="Greens")
 a
 
