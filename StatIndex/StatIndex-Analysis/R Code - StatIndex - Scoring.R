@@ -1,4 +1,4 @@
-# Part 4 - Scoring based on use of statistics
+# Part 4 - Scoring based on use of statistical insights in the news content
 
 # SCORE 1 - Total number of statistical words used
 sum <- sum(Terms$frequency)
