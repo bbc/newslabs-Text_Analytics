@@ -1,6 +1,20 @@
 # Text Analytics in the News
 
-This is a general repo for everything relating to text analytics in BBC News Labs. At the moment, that will mainly be **Topic Modelling** but who knows...
+This is a general repo for everything relating to text analytics in BBC News Labs.
+
+## Text Mining
+
+As part of the [Trust Project](http://thetrustproject.org/), which is exploring the role of trust in news, BBC News Labs has developed two prototypes to encourage trust in news content. One of these prototypes is the Stat Index.
+
+### Stat Index
+
+The Stat Index mines content, creating a series of scores to measure the extent to which statistical insights are used in news. It uses a pre-processed dictionary of statistical terms and a corpus-based approach.
+The tool takes news content from Freebird, an internal tool created by BBC R&D, converts it to text and then analyses the content’s use of statistics. It was developed using R, a statistical programming language that is increasingly being used by Journalists.
+
+The Stat Index is in testing phase – the data and code are in development and features are being added. This repository will be regularly updated to incorporate these changes.
+
+There is great potential in the use of data science and text mining to extract new insights about news. Analysing vast amounts of text can tell us more about the trustworthiness of content. Indeed, the Stat Index will be considered a success if it is used by Journalists and the public to learn more about the relationship between trust, statistics and news.
+
 
 ## Topic Modelling
 
