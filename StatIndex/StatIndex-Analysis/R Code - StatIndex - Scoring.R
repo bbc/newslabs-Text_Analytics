@@ -38,13 +38,20 @@ write.csv(freqs, "statistical_freqs.csv")
 install.packages("ggplot2")
 library(ggplot2)
 
-# Visualise statistical terms by frequency
+# Visualise statistical terms by frequency - first bar chart then interactive heatmap
 ggplot(order, aes(x=content, y=frequency)) + geom_bar(stat='identity', col="#ffcc00") + coord_flip()
 
 install.packages("d3heatmap")
 library(d3heatmap)
 
-d3heatmap(order, scale="column", dendrogram="none", color="Reds")
+a <- d3heatmap(order, scale="column", dendrogram="none", color="Reds")
+a
+
+install.packages("htmlWidgets")
+library(htmlWidgets)
+
+# Save the heatmap as a html file
+saveWidget(a, file="stat_freq_d3heatmap.html", selfcontained=TRUE, libdir=NULL)
 
 # Use of advanced statistics (complexity) - Scoring needs more research/testing
 # Merge the dataframe with statistical dictionary to determine
