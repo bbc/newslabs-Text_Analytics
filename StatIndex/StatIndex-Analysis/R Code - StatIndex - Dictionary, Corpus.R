@@ -9,9 +9,7 @@ library(RWeka)
 install.packages("reshape2")
 library(reshape2)
 
-# Read in dictionary of statistical terms and notation
-dictionary <- read.csv("C:/Users/boltol02/Projects/statistical_data_dictionary_3.csv", header = TRUE, stringsAsFactors = FALSE)
-
+# Read in dictionary of statistical terms and notation after downloading from Github
 dictionary <- read.csv("statistical_data_dictionary_3.csv", header = TRUE, stringsAsFactors = FALSE)
 dictionary <- dictionary[1:5]
 
