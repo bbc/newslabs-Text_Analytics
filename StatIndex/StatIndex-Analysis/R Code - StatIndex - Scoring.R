@@ -40,7 +40,7 @@ library(d3heatmap)
 
 Terms$frequency <- rownames(Terms)
 
-# Visualise the frequency of all statistical terms with a D3 heatmap
+# Visualise the frequency of all statistical terms with an interactive D3 heatmap
 a <- d3heatmap(Terms, scale="column", dendrogram="none", color="Greens")
 a
 
