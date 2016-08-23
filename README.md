@@ -8,7 +8,7 @@ As part of the [Trust Project](http://thetrustproject.org/), which is exploring 
 
 ### Stat Index
 
-The Stat Index mines content, creating scores and visualisations to measure the extent to which statistical insights are used in news. It uses a pre-processed dictionary of statistical terms and a corpus-based approach. The tool takes news content URLs, parses the HTML, converts it to text and then analyses the use of statistical insights like "percent", "data" and "map". It was developed using R, a highly popular statistical programming language that's increasingly being used by Journalists. It makes use of Freebird, an internal tool created by BBC R&D, but can be used to analyse selected URLs.
+The Stat Index mines content, creating scores and visualisations to measure the extent to which statistical insights are used in news. It uses a pre-processed dictionary of statistical terms and a corpus-based approach. The tool takes news content URLs, parses the HTML, converts it to text and then analyses the use of statistical insights like "percent", "data" and "map". It was developed using [R](https://www.r-project.org/), a highly popular statistical programming language that's increasingly being used by Journalists. It makes use of Freebird, an internal tool created by BBC R&D, but can be used to analyse selected URLs.
 
 The Stat Index is in testing phase after inital tests were successful. The data and code are in development and features are being added. This repository will be regularly updated to incorporate these changes. The Statistical Data Dictionary, for example, will change as more research is undertaken. Collaboration is welcome. For more information, please contact: [liam.bolton@bbc.co.uk](liam.bolton@bbc.co.uk). 
 
