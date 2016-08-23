@@ -11,7 +11,7 @@ As part of the [Trust Project](http://thetrustproject.org/), which is exploring 
 The Stat Index mines content, creating a series of scores to measure the extent to which statistical insights are used in news. It uses a pre-processed dictionary of statistical terms and a corpus-based approach.
 The tool takes news content from Freebird, an internal tool created by BBC R&D, converts it to text and then analyses the content’s use of statistics. It was developed using R, a statistical programming language that is increasingly being used by Journalists.
 
-The Stat Index is in testing phase – the data and code are in development and features are being added. This repository will be regularly updated to incorporate these changes. The Statistical Data Dictionary, for example, will change as more research is undertaken. For more information, please contact [liam.bolton@bbc.co.uk](liam.bolton@bbc.co.uk).
+The Stat Index is in testing phase – the data and code are in development and features are being added. This repository will be regularly updated to incorporate these changes. The Statistical Data Dictionary, for example, will change as more research is undertaken. For more information, please contact: [liam.bolton@bbc.co.uk](liam.bolton@bbc.co.uk).
 
 There is great potential in the use of data science and text mining to extract new insights about news. Analysing vast amounts of text can tell us more about the trustworthiness of content. Indeed, the Stat Index will be considered a success if it is used by Journalists and the public to learn more about the relationship between trust, statistics and news.
 
