@@ -44,7 +44,7 @@ ggplot(order, aes(x=content, y=frequency)) + geom_bar(stat='identity', col="#ffc
 install.packages("d3heatmap")
 library(d3heatmap)
 
-a <- d3heatmap(order, scale="column", dendrogram="none", color="Reds")
+a <- d3heatmap(order, scale="column", dendrogram="none", color="Greens")
 a
 
 install.packages("htmlWidgets")
