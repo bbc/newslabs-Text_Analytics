@@ -1,6 +1,6 @@
 # Text Analytics in the News
 
-This is a general repo for everything relating to text analytics in BBC News Labs.
+This is a repo for everything relating to text analytics at BBC News Labs.
 
 ## Text Mining
 
