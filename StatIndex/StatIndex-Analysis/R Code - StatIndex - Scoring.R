@@ -47,7 +47,7 @@ install.packages("ggplot2")
 library(ggplot2)
 
 # Visualise statistical words used in content using bar chart
-ggplot(df_merged, aes(x=content, y=frequency)) + geom_bar(stat='identity') + coord_flip()
+ggplot(df_merged, aes(x=content, y=frequency)) + geom_bar(stat='identity', color="#99e6ff") + coord_flip()
 theme(axis.title=element_blank()) + ggtitle(expression(atop("Frequency of Statistical Insights"))) + 
 theme(plot.title = element_text(size=20, hjust=0, color="black"))
 
