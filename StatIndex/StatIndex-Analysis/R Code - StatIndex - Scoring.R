@@ -38,8 +38,10 @@ write.csv(freqs, "statistical_freqs.csv")
 install.packages("d3heatmap")
 library(d3heatmap)
 
-# Visualise the frequency of statistical terms with a D3 heatmap
-a <- d3heatmap(order, scale="column", dendrogram="none", color="Greens")
+Terms$frequency <- rownames(Terms)
+
+# Visualise the frequency of all statistical terms with a D3 heatmap
+a <- d3heatmap(Terms, scale="column", dendrogram="none", color="Greens")
 a
 
 install.packages("htmlWidgets")
@@ -59,7 +61,7 @@ df_merged <- df_merged[!apply(df_merged, 1, function(x) {df_merged$frequency == 
 install.packages("ggplot2")
 library(ggplot2)
 
-# Visualise statistical words used in content
+# Visualise statistical words used in content using bar chart
 ggplot(df_merged, aes(x=content, y=frequency)) + geom_bar(stat='identity') + coord_flip()
 theme(axis.title=element_blank()) + ggtitle(expression(atop("Frequency of Statistical Insights"))) + 
 theme(plot.title = element_text(size=20, hjust=0, color="black"))
