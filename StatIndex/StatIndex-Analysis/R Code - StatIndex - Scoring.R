@@ -2,7 +2,7 @@
 
 # SCORE 1 - Total number of statistical words used
 sum <- sum(Terms$frequency)
-sum
+print(sum)
 
 # Create quick if else statement to print statement if news content uses statistical insights or not
 if (sum < 1) {
