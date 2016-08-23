@@ -35,12 +35,6 @@ print(Stat_Score_3)
 order <- Terms[order(Terms$frequency),]
 write.csv(freqs, "statistical_freqs.csv")
 
-install.packages("ggplot2")
-library(ggplot2)
-
-# Visualise statistical terms by frequency - first bar chart then interactive heatmap
-ggplot(order, aes(x=content, y=frequency)) + geom_bar(stat='identity', col="#ffcc00") + coord_flip()
-
 install.packages("d3heatmap")
 library(d3heatmap)
 
@@ -60,6 +54,9 @@ df_merged <- df_merged[1:6]
 
 # Remove words in dictionary not used
 df_merged <- df_merged[!apply(df_merged, 1, function(x) {df_merged$frequency == 0}),]
+
+install.packages("ggplot2")
+library(ggplot2)
 
 # Visualise statistical words used in content
 ggplot(df_merged, aes(x=content, y=frequency)) + geom_bar(stat='identity') + coord_flip()
