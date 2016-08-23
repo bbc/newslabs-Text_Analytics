@@ -33,22 +33,7 @@ print(Stat_Score_3)
 
 # Order by frequency of statistical term
 order <- Terms[order(Terms$frequency),]
-write.csv(freqs, "statistical_freqs.csv")
-
-install.packages("d3heatmap")
-library(d3heatmap)
-
-Terms$frequency <- rownames(Terms)
-
-# Visualise the frequency of all statistical terms with an interactive D3 heatmap
-a <- d3heatmap(Terms, scale="column", dendrogram="none", color="Greens")
-a
-
-install.packages("htmlWidgets")
-library(htmlWidgets)
-
-# Save the heatmap as a html file
-saveWidget(a, file="stat_freq_d3heatmap.html", selfcontained=TRUE, libdir=NULL)
+print(order)
 
 # Use of advanced statistics (complexity) - Scoring needs more research/testing
 # Merge the dataframe with statistical dictionary to determine
