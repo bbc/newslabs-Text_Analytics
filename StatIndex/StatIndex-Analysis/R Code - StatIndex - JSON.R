@@ -8,7 +8,7 @@ library(jsonlite)
 
 
 # Extract data direct from Freebird
-news_json <- fromJSON("https://admin.freebird.prototyping.bbc.co.uk/recipes/94.json")
+news_json <- fromJSON("https://api.freebird.prototyping.bbc.co.uk/recipes/94")
 
 # Subset URLs containing news content
 news_URL <- news_json$items$url
