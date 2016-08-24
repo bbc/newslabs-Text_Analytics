@@ -42,7 +42,7 @@ Some ideas:
 - Depending on the vocabulary, they word frequency matrix may become huge --> maybe we can limit the vocabulary?
 - In a news story the first few sentences are supposed to contain the core information of the article. Using only those first sentences, we may get rid of noise (i.e. synonyms, word-games, irony...) contained in the body of the text and increase performance?
 
-### (2)Topic Modelling with a given number (and possibly label) of topics
+### (2) Topic Modelling with a given number (and possibly label) of topics
 
 Its not that we don't know anythings about topics: There are of course broad topic groups (assigned within BBC and throughout other news organisations) and varying degrees of sub-topic-breakdowns. So, it may be easier to fix the number (and maybe label) for possible topics beforehand and do unsupervised classification on word frequency distributions in news articles. 
 
