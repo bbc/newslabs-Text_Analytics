@@ -14,6 +14,7 @@ In [Stat Index](https://github.com/BBC-News-Labs/Text_Analytics/tree/master/Stat
 
 The Stat Index is in testing phase after inital tests were successful. The data and code are in development and features are being added. This repository will be regularly updated to incorporate these changes. The Statistical Data Dictionary, for example, will change as more research is undertaken. Collaboration is welcome. For more information, please contact: <u>liam.bolton@bbc.co.uk</u>. 
 
+---
 
 ## Topic Modelling
 
