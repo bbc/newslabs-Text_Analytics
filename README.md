@@ -4,7 +4,7 @@ This is a repo for everything relating to text analytics at BBC News Labs.
 
 ## Text Mining
 
-As part of the [Trust Project](http://thetrustproject.org/), which is exploring the role of trust in news, BBC News Labs has developed two prototypes to encourage trust in news content. One of these prototypes is the Stat Index.
+There is great potential in the use of data science and text mining to extract new insights about news. Analysing vast amounts of text can tell us more about the trustworthiness of content. As part of the [Trust Project](http://thetrustproject.org/), which is exploring the role of trust in news, Google Fellows at BBC News Labs have developed two prototypes to encourage trust in news content. One of these prototypes is the Stat Index.
 
 ### Stat Index
 
@@ -14,7 +14,7 @@ In [Stat Index](https://github.com/BBC-News-Labs/Text_Analytics/tree/master/Stat
 
 The Stat Index is in testing phase after inital tests were successful. The data and code are in development and features are being added. This repository will be regularly updated to incorporate these changes. The Statistical Data Dictionary, for example, will change as more research is undertaken. Collaboration is welcome. For more information, please contact: <u>liam.bolton@bbc.co.uk</u>. 
 
-There is great potential in the use of data science and text mining to extract new insights about news. Analysing vast amounts of text can tell us more about the trustworthiness of content. Indeed, the Stat Index will be considered a success if it is used by Journalists and the public to learn more about the relationship between trust, statistics and news. 
+The Stat Index will be considered a success if it is used by Journalists and the public to learn more about the relationship between trust, statistics and news. 
 
 
 ## Topic Modelling
