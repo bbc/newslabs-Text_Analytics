@@ -46,7 +46,7 @@ df_merged <- df_merged[!apply(df_merged, 1, function(x) {df_merged$frequency == 
 install.packages("ggplot2")
 library(ggplot2)
 
-# Visualise statistical words used in content using bar chart
+# Explore the data with a quick visualisation of statistical words used in the content
 ggplot(df_merged, aes(x=content, y=frequency)) + geom_bar(stat='identity', fill="#99e6ff") + coord_flip()
 theme(axis.title=element_blank()) + ggtitle(expression(atop("Frequency of Statistical Insights"))) + 
 theme(plot.title = element_text(size=20, hjust=0, color="black"))
