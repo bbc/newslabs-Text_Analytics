@@ -26,7 +26,7 @@ corpus <- tm_map(corpus, removePunctuation)
 corpus <- tm_map(corpus, stripWhitespace)
 corpus <- tm_map(corpus, removeWords, stopwords("english"))
 
-# Test - although may want to look at specific unstemmed words (e.g. dataset vs data visualisation)
+# Stem - although may want to look at specific unstemmed words (e.g. dataset vs data visualisation)
 corpus <- tm_map(corpus, stemDocument)
 
 # Build term document matrix (tdm)
@@ -40,7 +40,7 @@ Terms <- cbind(rownames(Terms), Terms)
 rownames(Terms) <- NULL
 colnames(Terms) <- c("content", "frequency")
 Terms <- Terms[1:2]
-head(Terms)
+print(Terms)
 
 # Further analysis - Count the use of one word - 'data' in the news content
 dictionary_2 <- c("data")
@@ -49,4 +49,4 @@ Term_Data <- cbind(rownames(Term_Data), Term_Data)
 rownames(Term_Data) <- NULL
 colnames(Term_Data) <- c("content", "frequency")
 Term_Data <- Term_Data[1:2]
-head(Term_Data)
+print(Term_Data)
