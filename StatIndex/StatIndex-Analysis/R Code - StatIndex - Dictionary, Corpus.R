@@ -26,7 +26,7 @@ corpus <- tm_map(corpus, removePunctuation)
 corpus <- tm_map(corpus, stripWhitespace)
 corpus <- tm_map(corpus, removeWords, stopwords("english"))
 
-# Stem - although may want to look at specific unstemmed words (e.g. dataset vs data visualisation)
+# Stem (although may want to look at specific unstemmed words e.g. dataset vs data visualisation)
 corpus <- tm_map(corpus, stemDocument)
 
 # Build term document matrix (tdm)
