@@ -13,9 +13,9 @@ library(reshape2)
 dictionary <- read.csv("statistical_data_dictionary_3.csv", header = TRUE, stringsAsFactors = FALSE)
 dictionary <- dictionary[1:5]
 
-# Read in corpus
+# Read in corpus (example directory)
 sf <- system.file("news_text", "txt", package = "tm")
-ds <- DirSource("C:/Users/boltol02/Projects/News_Text_Files")
+ds <- DirSource("Projects/News_Text_Files")
 news_content <- Corpus(ds)
 
 # Data tidying and transformation for corpus
