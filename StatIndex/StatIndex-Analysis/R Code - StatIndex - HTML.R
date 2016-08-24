@@ -6,10 +6,10 @@ library(RCurl)
 install.packages("XML")
 library(XML)
 
-# Parse first URL in Freebird
+# Parse first URL from Freebird
 doc_html <- htmlTreeParse(news_URL_1, useInternal = TRUE)
 
-# Clean text data
+# Extract text and clean data
 news_text <- unlist(xpathApply(doc_html, '//p', xmlValue))
 news_text <- gsub('\\n', ' ', news_text)
 news_text <- paste(news_text, collapse = ' ')
