@@ -9,7 +9,7 @@ There is great potential in the use of data science and text mining to extract n
 ### Stat Index
 
 #### What is the Stat Index?
-The tool mines content, creating scores and visualisations to measure the extent to which statistical insights have been used. It uses a pre-processed dictionary of statistical terms and a corpus-based approach. The tool takes news content URLs, parses the HTML, converts it to text and then analyses the use of statistical insights like "percent", "data" and "map". It was developed using [R](https://www.r-project.org/), a highly popular statistical programming language that's increasingly being used by Journalists. Below is an example visualisation that can be embedded in webpages.
+The tool mines content, creating scores and visualisations to measure the extent to which statistical insights have been used. It uses a pre-processed dictionary of statistical terms and a corpus-based approach. The tool takes news content URLs, parses the HTML, converts it to text and then analyses the use of statistical insights like "percent", "data" and "map". It was developed using [R](https://www.r-project.org/), an extremely popular statistical programming language that's increasingly being used by Journalists. Below is an example visualisation that can be embedded in webpages.
 
 ![alt tag](https://studentdatalabs.files.wordpress.com/2016/08/statindex-scores1.jpg)
 
