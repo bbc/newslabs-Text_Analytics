@@ -48,10 +48,11 @@ df_merged <- df_merged[1:6]
 # Remove words in dictionary not used
 df_merged <- df_merged[!apply(df_merged, 1, function(x) {df_merged$frequency == 0}),]
 
+
+# Explore the data with a quick visualisation of statistical words used in the content
 install.packages("ggplot2")
 library(ggplot2)
 
-# Explore the data with a quick visualisation of statistical words used in the content
 ggplot(df_merged, aes(x=content, y=frequency)) + geom_bar(stat='identity', fill="#99e6ff") + coord_flip()
 theme(axis.title=element_blank()) + ggtitle(expression(atop("Frequency of Statistical Insights"))) + 
 theme(plot.title = element_text(size=20, hjust=0, color="black"))
@@ -60,7 +61,6 @@ theme(plot.title = element_text(size=20, hjust=0, color="black"))
 # SCORE 4 - Find mean 'complexity' based on a score that measures how advanced the statistical words are
 complexity <- mean(df_merged$score_3, na.rm=TRUE)
 print(complexity)
-
 
 
 # Build a table widget showing statistical term, how often it's used in news content and complexity
