@@ -75,7 +75,7 @@ library(DT)
 a <- datatable(score_merged, options = list(pageLength = 5, dom = 'tip'),
     caption = htmltools::tags$caption(
     style = 'caption-side: top; text-align: center;',
-    'Stat Index: ', htmltools::em('Sum of Statistical Insights, Complexity, Stat Pecent of Total')
+    'Stat Index: ', htmltools::em('Total Number of Statistical Insights; Complexity; Stat Pecent of Total')
   ))
 
 install.packages("htmlWidgets")
