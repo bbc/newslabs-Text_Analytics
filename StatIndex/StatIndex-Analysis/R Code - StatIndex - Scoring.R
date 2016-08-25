@@ -63,27 +63,20 @@ complexity <- mean(df_merged$score_3, na.rm=TRUE)
 print(complexity)
 
 
-# Build a table widget showing statistical term, how often it's used in news content and complexity
+# Merge three of the Stat Index scores into one data frame
+scores_merged <- data.frame(sum, complexity, stat_percent)
+row.names(score_merged) <- "Scores"
+print(scores_merged)
+
+# Build a table widget showing Stat Index scores, how often it's used in news content and complexity
 install.packages("DT")
 library(DT)
 
-# Clean the data - remove and rename columns
-df_merged$score <- NULL
-df_merged$score_2 <- NULL
-colnames(df_merged)[colnames(df_merged) == "score_3"] <- "Complexity"
-colnames(df_merged)[colnames(df_merged) == "content"] <- "Term"
-colnames(df_merged)[colnames(df_merged) == "frequency"] <- "Count"
-df_merged <- df_merged[, c("Term", "Count", "Complexity")]
-
-# Create the data table with statistical terms as the row
-a <- datatable(head(df_merged), caption = 'Stat Index') %>% 
-     formatStyle('Count', 
-     background = styleColorBar(df_merged$Count, 'blue'),
-     backgroundSize = '100% 90%',
-     backgroundRepeat = 'no-repeat',
-     backgroundPosition = 'center'
-   )
-a
+a <- datatable(score_merged, options = list(pageLength = 5, dom = 'tip'),
+    caption = htmltools::tags$caption(
+    style = 'caption-side: bottom; text-align: left;',
+    'Stat Index: ', htmltools::em('Sum of Statistical Insights Used, Complexity, Percentage Statistical Insights')
+  ))
 
 install.packages("htmlWidgets")
 library(htmlWidgets)
