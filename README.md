@@ -11,6 +11,8 @@ There is great potential in the use of data science and text mining to extract n
 #### What is the Stat Index?
 The tool mines content, creating scores and visualisations to measure the extent to which statistical insights are used in news. It uses a pre-processed dictionary of statistical terms and a corpus-based approach. The tool takes news content URLs, parses the HTML, converts it to text and then analyses the use of statistical insights like "percent", "data" and "map". It was developed using [R](https://www.r-project.org/), a highly popular statistical programming language that's increasingly being used by Journalists. It makes use of Freebird, an internal tool created by BBC R&D, but can be used to analyse selected URLs to make comparisons.
 
+![alt tag](https://studentdatalabs.files.wordpress.com/2016/08/statindex-scores.jpg)
+
 #### How do I use it?
 In the [Stat Index](https://github.com/BBC-News-Labs/Text_Analytics/tree/master/StatIndex) folder you'll find two more folders - one contains the [statistical dictionary](https://github.com/BBC-News-Labs/Text_Analytics/tree/master/StatIndex/StatIndex-StatDictionary) and the other with the code to carry out the [analysis](https://github.com/BBC-News-Labs/Text_Analytics/tree/master/StatIndex/StatIndex-Analysis) and create the scores. The dictionary has been pre-processed and is open to additions and changes. The four-part analysis should be carried out in the following order - JSON, HTML, Dictionary/Corpus and Scoring. If you're not a developer or would like to learn more don't worry - a more detailed step-by-step workflow will be published soon for all.
 
