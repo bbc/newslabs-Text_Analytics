@@ -16,6 +16,9 @@ news_text <- paste(news_text, collapse = ' ')
 
 head(news_text)
 
-# If looking to parse a selected URL (e.g. this one from QZ)
+#### If looking to parse a selected URL (e.g. this one from QZ) and run through the same as above
 doc_html <- htmlTreeParse("http://qz.com/762729/poor-data-is-hurting-african-countries-ability-to-make-good-policy-decisions/",
                              useInternal = TRUE)
+news_text <- unlist(xpathApply(doc_html, '//p', xmlValue))
+news_text <- gsub('\\n', ' ', news_text)
+news_text <- paste(news_text, collapse = ' ')
