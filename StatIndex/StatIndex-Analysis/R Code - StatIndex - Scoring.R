@@ -78,6 +78,7 @@ table_of_scores <- datatable(scores_merged, options = list(pageLength = 5, dom =
     'Stat Index - ', htmltools::em('Total Number of Statistical Insights; Complexity; Percentage Statistics in Content')
   ))
 
+# View table of scores in your browser
 table_of_scores
 
 install.packages("htmlWidgets")
