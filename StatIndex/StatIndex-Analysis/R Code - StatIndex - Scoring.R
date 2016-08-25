@@ -31,8 +31,8 @@ print(stat_percent)
 
 
 # SCORE 3 - Mean statistical words based on dictionary dataset
-Stat_Score_3 <- mean(Terms$frequency)
-print(Stat_Score_3)
+stat_mean <- mean(Terms$frequency)
+print(stat_mean)
 
 
 # Order by frequency of statistical term
