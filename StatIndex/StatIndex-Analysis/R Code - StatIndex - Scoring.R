@@ -32,7 +32,7 @@ Stat_Score_3 <- mean(Terms$frequency)
 print(Stat_Score_3)
 
 # Order by frequency of statistical term
-order <- Terms[order(Terms$frequency),]
+order <- Terms[order(Terms$frequency, decreasing=TRUE),]
 print(order)
 
 # Use of advanced statistics (complexity) - Scoring needs more research/testing
