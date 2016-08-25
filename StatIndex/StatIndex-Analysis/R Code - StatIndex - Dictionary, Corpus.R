@@ -28,7 +28,7 @@ corpus <- tm_map(corpus, removeWords, stopwords("english"))
 # Stem (although may want to look at specific unstemmed words e.g. dataset vs data visualisation)
 corpus <- tm_map(corpus, stemDocument)
 
-# Build term document matrix (tdm)
+# Build term document matrix (tdm) for the news content
 tdm <- TermDocumentMatrix(corpus)
 inspect(tdm)
 tdm <- as.matrix(tdm)
