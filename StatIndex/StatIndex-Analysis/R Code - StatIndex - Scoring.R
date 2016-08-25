@@ -53,3 +53,27 @@ theme(plot.title = element_text(size=20, hjust=0, color="black"))
 # SCORE 4 - Find mean 'complexity' based on a score that measures how advanced the statistical words are
 complexity <- mean(df_merged$score_3, na.rm=TRUE)
 print(complexity)
+
+
+
+# Build a table widget showing statistical term, how often it's used in news content and complexity
+install.packages("DT")
+library(DT)
+
+# Clean the data - remove and rename columns
+df_merged$score <- NULL
+df_merged$score_2 <- NULL
+colnames(df_merged)[colnames(df_merged) == "score_3"] <- "Complexity"
+colnames(df_merged)[colnames(df_merged) == "content"] <- "Term"
+colnames(df_merged)[colnames(df_merged) == "frequency"] <- "Count"
+df_merged <- df_merged[, c("Term", "Count", "Complexity")]
+
+# Create the data table with statistical terms as the row
+a <- datatable(head(df_merged)) 
+a
+
+install.packages("htmlWidgets")
+library(htmlWidgets)
+
+# Save the table as a widget, embed beneath news content
+saveWidget(a, file="StatIndexTable.html", selfcontained=TRUE, libdir=NULL)
