@@ -72,14 +72,16 @@ print(scores_merged)
 install.packages("DT")
 library(DT)
 
-a <- datatable(scores_merged, options = list(pageLength = 5, dom = 'tip'),
+table_of_scores <- datatable(scores_merged, options = list(pageLength = 5, dom = 'tip'),
     caption = htmltools::tags$caption(
     style = 'caption-side: top; text-align: center;',
     'Stat Index - ', htmltools::em('Total Number of Statistical Insights; Complexity; Percentage Statistics in Content')
   ))
 
+table_of_scores
+
 install.packages("htmlWidgets")
 library(htmlWidgets)
 
 # Save the table as a widget, potentially embed beneath news content
-saveWidget(a, file="StatIndexTable.html", selfcontained=TRUE, libdir=NULL)
+saveWidget(table_of_scores, file="StatIndexTable.html", selfcontained=TRUE, libdir=NULL)
