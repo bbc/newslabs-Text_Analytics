@@ -65,17 +65,17 @@ print(complexity)
 
 # Merge three of the Stat Index scores into one data frame
 scores_merged <- data.frame(sum, complexity, stat_percent)
-row.names(score_merged) <- "Scores"
+row.names(scores_merged) <- "Scores"
 print(scores_merged)
 
 # Build a table widget showing Stat Index scores, how often it's used in news content and complexity
 install.packages("DT")
 library(DT)
 
-a <- datatable(score_merged, options = list(pageLength = 5, dom = 'tip'),
+a <- datatable(scores_merged, options = list(pageLength = 5, dom = 'tip'),
     caption = htmltools::tags$caption(
     style = 'caption-side: top; text-align: center;',
-    'Stat Index: ', htmltools::em('Total Number of Statistical Insights; Complexity; Stat Pecent of Total')
+    'Stat Index - ', htmltools::em('Total Number of Statistical Insights; Complexity; Percentage Statistics in Content')
   ))
 
 install.packages("htmlWidgets")
