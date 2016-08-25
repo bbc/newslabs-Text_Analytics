@@ -76,7 +76,7 @@ colnames(df_merged)[colnames(df_merged) == "frequency"] <- "Count"
 df_merged <- df_merged[, c("Term", "Count", "Complexity")]
 
 # Create the data table with statistical terms as the row
-a <- datatable(head(df_merged)) %>% 
+a <- datatable(head(df_merged), caption = 'Stat Index') %>% 
      formatStyle('Count', 
      background = styleColorBar(df_merged$Count, 'blue'),
      backgroundSize = '100% 90%',
