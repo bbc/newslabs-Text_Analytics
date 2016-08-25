@@ -35,8 +35,7 @@ print(Stat_Score_3)
 order <- Terms[order(Terms$frequency, decreasing=TRUE),]
 print(order)
 
-# Use of advanced statistics (complexity) - Scoring needs more research/testing
-# Merge the dataframe with statistical dictionary to determine
+# Merge the dataframe with statistical dictionary to determine complexity of statistical insights used
 df_merged <- merge(Terms, dictionary, by="content")
 df_merged <- df_merged[1:6]
 
