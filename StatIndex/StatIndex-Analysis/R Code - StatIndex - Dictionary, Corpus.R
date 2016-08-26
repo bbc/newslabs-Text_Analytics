@@ -9,6 +9,9 @@ library(RWeka)
 install.packages("reshape2")
 library(reshape2)
 
+install.packages("stringr")
+library(stringr)
+
 # Read in dictionary of statistical terms and notation after downloading from Github
 dictionary <- read.csv("statistical_data_dictionary_prelim.csv", header = TRUE, stringsAsFactors = FALSE)
 
@@ -28,12 +31,14 @@ corpus <- tm_map(corpus, removeWords, stopwords("english"))
 # Stem (although may want to look at specific unstemmed words e.g. dataset vs data visualisation)
 corpus <- tm_map(corpus, stemDocument)
 
-# Build term document matrix (tdm) for the news content
+
+# Build term document matrix (tdm) for the news content containing all words in content
 tdm <- TermDocumentMatrix(corpus)
 inspect(tdm)
 tdm <- as.matrix(tdm)
 
-# Dataframe containing frequency of statistical words in news content
+
+# Dataframe from term document matric containing frequency of statistical words in content
 Terms <- as.data.frame(inspect(TermDocumentMatrix(corpus, list(dictionary = dictionary$content))))
 Terms <- cbind(rownames(Terms), Terms)
 rownames(Terms) <- NULL
