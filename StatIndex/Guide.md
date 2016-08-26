@@ -21,7 +21,7 @@ The other element of the Stat Index is the [Statistical Dictionary](https://gith
 
 | Rank          | Score         | Example                                              |
 | ------------- |:-------------:| ---------------------------------------------------: |
-| Low           | 0.2 - 0.4     |  Numbers                                             |
+| Low           | 0.2 - 0.4     |  Numbers to data                                     |
 | Medium        | 0.6 - 0.8     |  Percentage change to use of variables               |
 | Advanced      | 1             |  Statistical modelling and use of data visualisation |
 
