@@ -18,8 +18,9 @@ news_text <- gsub('\\n', ' ', news_text)
 news_text <- paste(news_text, collapse = ' ')
 
 # Extract numbers and bind to the text
-numbers <- as.numeric(str_extract(news_text, "[0-9]+"))
-rbind(news_text, numbers)
+numbers <- gregexpr("[0-9]", news_text)
+numbers_intext <- as.numeric(unique(unlist(regmatches(news_text, numbers))))
+rbind(news_text, numbers_intext)
 
 head(news_text)
 
