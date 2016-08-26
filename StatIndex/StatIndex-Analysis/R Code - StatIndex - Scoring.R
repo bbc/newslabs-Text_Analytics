@@ -42,7 +42,6 @@ print(order)
 
 # Merge the dataframe with statistical dictionary to determine complexity of statistical insights used
 df_merged <- merge(Terms, dictionary, by="content")
-df_merged <- df_merged[1:6]
 
 
 # Remove words in dictionary not used
@@ -59,7 +58,7 @@ theme(plot.title = element_text(size=20, hjust=0, color="black"))
 
 
 # SCORE 4 - Find mean 'complexity' based on a score that measures how advanced the statistical words are
-complexity <- mean(df_merged$score_3, na.rm=TRUE)
+complexity <- mean(df_merged$complexity_prelim, na.rm=TRUE)
 print(complexity)
 
 
