@@ -102,6 +102,7 @@ ordinal variable,statistical,1,1
 outlier ,statistical,1,1
 parameter ,statistical,1,1
 pattern ,statistical,1,0.8
+pct,statistical,1,0.6
 per cent,statistical,1,0.6
 percent,statistical,1,0.6
 percentage ,statistical,1,0.6
