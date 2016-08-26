@@ -21,7 +21,7 @@ head(news_text)
 # Extract numbers and bind to the text
 numbers <- gregexpr("[0-9]+", news_text)
 numbers_intext <- as.numeric(unique(unlist(regmatches(news_text, numbers))))
-rbind(news_text, numbers_intext)
+news_text <- rbind(news_text, numbers_intext)
 
 
 #### If looking to analyse your own news URL (e.g. this one from Quartz) - run the code through same as above
