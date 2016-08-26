@@ -28,11 +28,6 @@ corpus <- tm_map(corpus, removePunctuation)
 corpus <- tm_map(corpus, stripWhitespace)
 corpus <- tm_map(corpus, removeWords, stopwords("english"))
 
-# Extract percentage points and numbers from corpus and merge 
-notation <- (str_extract(corpus, "[%]+"))
-numbers <- as.numeric(str_extract(corpus, "[0-9]+"))
-rbind(corpus, notation, numbers)
-
 
 # Build term document matrix (tdm) for the news content containing all words in content
 tdm <- TermDocumentMatrix(corpus)
