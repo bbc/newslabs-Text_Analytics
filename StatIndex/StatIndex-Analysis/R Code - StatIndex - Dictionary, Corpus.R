@@ -10,7 +10,7 @@ install.packages("reshape2")
 library(reshape2)
 
 # Read in dictionary of statistical terms and notation after downloading from Github
-dictionary <- read.csv("statistical_data_dictionary_4.csv", header = TRUE, stringsAsFactors = FALSE)
+dictionary <- read.csv("statistical_data_dictionary_prelim.csv", header = TRUE, stringsAsFactors = FALSE)
 
 # Read in corpus (example directory)
 sf <- system.file("news_text", "txt", package = "tm")
