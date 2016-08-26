@@ -14,6 +14,7 @@ news_text <- unlist(xpathApply(doc_html, '//p', xmlValue))
 news_text <- gsub('\\n', ' ', news_text)
 news_text <- paste(news_text, collapse = ' ')
 
+
 head(news_text)
 
 #### If looking to analyse your own news URL (e.g. this one from Quartz) - run the code through same as above
