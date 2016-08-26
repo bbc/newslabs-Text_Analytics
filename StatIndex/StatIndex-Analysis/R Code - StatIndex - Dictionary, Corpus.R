@@ -9,8 +9,6 @@ library(RWeka)
 install.packages("reshape2")
 library(reshape2)
 
-install.packages("stringr")
-library(stringr)
 
 # Read in dictionary of statistical terms and notation after downloading from Github
 dictionary <- read.csv("statistical_data_dictionary_prelim.csv", header = TRUE, stringsAsFactors = FALSE)
