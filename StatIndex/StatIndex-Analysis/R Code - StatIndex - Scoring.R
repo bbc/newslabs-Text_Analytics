@@ -44,7 +44,7 @@ print(order)
 df_merged <- merge(Terms, dictionary, by="content")
 
 
-# Remove words in dictionary not used
+# Remove words in statistical dictionary not used in the news content
 df_merged <- df_merged[!apply(df_merged, 1, function(x) {df_merged$frequency == 0}),]
 
 
