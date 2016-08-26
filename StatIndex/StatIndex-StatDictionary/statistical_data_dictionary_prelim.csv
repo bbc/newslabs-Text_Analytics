@@ -34,13 +34,13 @@ continuous,statistical,1,1
 continuous variable,statistical,1,1
 correlation,statistical,1,1
 cumulative frequency graph,statistical,1,1
-data,statistical,1,0.6
+data,statistical,1,0.4
 data analysis,statistical,1,0.6
 data collection,statistical,1,0.6
-data set,statistical,1,0.6
+data set,statistical,1,0.4
 data visualisation,data visualisation,1,1
 data vizualisation,data visualisation,1,1
-dataset,statistical,1,0.6
+dataset,statistical,1,0.4
 decile ,statistical,1,1
 descriptive statistics,statistical,1,0.6
 digit,statistical,1,0.2
@@ -185,7 +185,7 @@ treemap,data visualisation,1,1
 trend,statistical,1,1
 trillion,statistical,1,0.2
 variability,statistical,1,1
-variable,statistical,1,0.6
+variable,statistical,1,0.8
 variance ,statistical,1,1
 variation,statistical,1,1
 zero,statistical,1,0.2
