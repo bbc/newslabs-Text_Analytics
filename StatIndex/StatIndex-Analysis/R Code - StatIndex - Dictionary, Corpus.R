@@ -28,8 +28,9 @@ corpus <- tm_map(corpus, removePunctuation)
 corpus <- tm_map(corpus, stripWhitespace)
 corpus <- tm_map(corpus, removeWords, stopwords("english"))
 
-# Stem (although may want to look at specific unstemmed words e.g. dataset vs data visualisation)
-corpus <- tm_map(corpus, stemDocument)
+# Extract percentage points from corpus and 
+notation <- (str_extract(corpus, "[%]+"))
+rbind(corpus, notation)
 
 
 # Build term document matrix (tdm) for the news content containing all words in content
