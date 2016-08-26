@@ -103,6 +103,7 @@ outlier ,statistical,1,1
 parameter ,statistical,1,1
 pattern ,statistical,1,0.8
 per cent,statistical,1,0.6
+percent,statistical,1,0.6
 percentage ,statistical,1,0.6
 percentage change,statistical,1,0.6
 percentage decrease,statistical,1,0.6
