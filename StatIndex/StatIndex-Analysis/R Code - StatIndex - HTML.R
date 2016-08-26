@@ -6,6 +6,9 @@ library(RCurl)
 install.packages("XML")
 library(XML)
 
+install.packages("stringr")
+library(stringr)
+
 # Parse first URL from Freebird
 doc_html <- htmlTreeParse(news_URL_1, useInternal = TRUE)
 
@@ -14,7 +17,10 @@ news_text <- unlist(xpathApply(doc_html, '//p', xmlValue))
 news_text <- gsub('\\n', ' ', news_text)
 news_text <- paste(news_text, collapse = ' ')
 
-
+# Extract percentage points and numbers from text and merge 
+notation <- (str_extract(news_text, "[%]+"))
+numbers <- as.numeric(str_extract(news_text, "[0-9]+"))
+rbind(news_text, notation, numbers)
 
 head(news_text)
 
@@ -24,3 +30,7 @@ doc_html <- htmlTreeParse("http://qz.com/762729/poor-data-is-hurting-african-cou
 news_text <- unlist(xpathApply(doc_html, '//p', xmlValue))
 news_text <- gsub('\\n', ' ', news_text)
 news_text <- paste(news_text, collapse = ' ')
+
+notation <- (str_extract(news_text, "[%]+"))
+numbers <- as.numeric(str_extract(news_text, "[0-9]+"))
+rbind(news_text, notation, numbers)
