@@ -1,0 +1,186 @@
+content,type,number,complexity_prelim
+%,notation,1,0.6
+absolute value,statistical,1,1
+alternative hypothesis ,statistical,1,1
+analyse data,statistical,1,1
+area chart,data visualisation,1,1
+assumptions,statistical,1,1
+average ,statistical,1,0.6
+bar chart,data visualisation,1,1
+bar chart,data visualisation,1,1
+bar chart,statistical,1,1
+bar graph,data visualisation,1,1
+bayes,statistical,1,1
+bayesian,statistical,1,1
+bias ,statistical,1,1
+billion,statistical,1,0.2
+binomial distribution ,statistical,1,1
+box and whisker plot,data visualisation,1,1
+boxplot,data visualisation,1,1
+calculated,statistical,1,0.6
+cartogram,data visualisation,1,1
+categorical,statistical,1,1
+categorical variable ,statistical,1,1
+causality,statistical,1,1
+causation,statistical,1,1
+census,statistical,1,1
+central limit theorem,statistical,1,1
+chart,data visualisation,1,1
+chi-square,statistical,1,1
+choropleth,data visualisation,1,1
+confidence interval ,statistical,1,1
+continuous,statistical,1,1
+continuous variable ,statistical,1,1
+correlation,statistical,1,1
+cumulative frequency graph,statistical,1,1
+data,statistical,1,0.6
+data analysis,statistical,1,0.6
+data collection,statistical,1,0.6
+data set,statistical,1,0.6
+data visualisation,data visualisation,1,1
+data vizualisation,data visualisation,1,1
+dataset,statistical,1,0.6
+decile ,statistical,1,1
+descriptive statistics ,statistical,1,0.6
+discrete,statistical,1,1
+discrete variable ,statistical,1,0.8
+dispersion ,statistical,1,1
+distribution,statistical,1,1
+dot plot,data visualisation,1,1
+estimate,statistical,1,1
+estimation ,statistical,1,1
+estimator ,statistical,1,1
+exponential,statistical,1,1
+factor ,statistical,1,1
+figure,statistical,1,0.6
+five-number summary ,statistical,1,1
+frequencies ,statistical,1,0.8
+frequency,statistical,1,1
+gantt chart,data visualisation,1,1
+graph,data visualisation,1,1
+graphic,data visualisation,1,1
+half,statistical,1,0.2
+heat map,data visualisation,1,1
+heatmap,data visualisation,1,1
+histogram,data visualisation,1,1
+hundred,statistical,1,0.2
+hypothesis test,statistical,1,1
+inference,statistical,1,0.8
+inferential,statistical,1,1
+infographic,data visualisation,1,1
+interactive,data visualisation,1,1
+inter-quartile range,statistical,1,1
+levels ,statistical,1,0.6
+line chart,data visualisation,1,1
+line graph,data visualisation,1,1
+line of best fit,data visualisation,1,1
+linear modeling,statistical,1,1
+linear regression,statistical,1,1
+logistic regression,statistical,1,1
+map,data visualisation,1,1
+mapped,data visualisation,1,1
+maximum ,statistical,1,0.6
+mean,statistical,1,0.6
+mean deviation,statistical,1,0.6
+measured,statistical,1,0.6
+measures,statistical,1,0.6
+median ,statistical,1,0.6
+metadata,statistical,1,0.6
+million,statistical,1,0.2
+minimum,statistical,1,0.6
+mixed variable ,statistical,1,1
+model,statistical,1,1
+network,data visualisation,1,1
+normal distribution ,statistical,1,0.8
+normalisation,statistical,1,1
+normalization,statistical,1,1
+null hypothesis ,statistical,1,1
+number,statistical,1,0.2
+numerical,statistical,1,0.2
+numerical variable,statistical,1,1
+ordinal variable,statistical,1,1
+outlier ,statistical,1,1
+parameter ,statistical,1,1
+pattern ,statistical,1,0.8
+per cent,statistical,1,0.6
+percentage ,statistical,1,0.6
+percentage change,statistical,1,0.6
+percentage decrease,statistical,1,0.6
+percentage increase,statistical,1,0.6
+percentile,statistical,1,0.6
+pie chart,data visualisation,1,1
+population ,statistical,1,0.6
+population change,statistical,1,0.6
+precision,statistical,1,1
+predicted value,statistical,1,1
+prediction,statistical,1,1
+probabilities,statistical,1,1
+probability,statistical,1,1
+projection,statistical,1,1
+proportion ,statistical,1,0.8
+p-value,statistical,1,1
+qualitative,statistical,1,0.6
+quantiative,statistical,1,0.6
+quantiles ,statistical,1,1
+quarter,statistical,1,0.2
+quartiles ,statistical,1,1
+quintile,statistical,1,1
+random sample,statistical,1,1
+random sample ,statistical,1,1
+range ,statistical,1,0.8
+rate,statistical,1,0.6
+ratio,statistical,1,1
+regression,statistical,1,1
+return period,statistical,1,1
+risk ,statistical,1,0.8
+sample,statistical,1,1
+sampling,statistical,1,1
+sampling distribution,statistical,1,1
+scale,statistical,1,0.6
+scatterplot,data visualisation,1,1
+secondary data,statistical,1,1
+significance level,statistical,1,1
+simulation,statistical,1,1
+skew,statistical,1,0.8
+skewness,statistical,1,1
+small multiple,data visualisation,1,1
+sparkline,data visualisation,1,1
+spread,statistical,1,1
+standard deviation,statistical,1,1
+standard error,statistical,1,1
+standardisation,statistical,1,1
+standardization,statistical,1,1
+stat,statistical,1,0.6
+static,statistical,1,1
+statistic,statistical,1,0.6
+statistical analysis,statistical,1,1
+statistical error,statistical,1,1
+statistical error,statistical,1,1
+statistical method,statistical,1,1
+statistical model,statistical,1,1
+statistical modelling,statistical,1,1
+statistical probability,statistical,1,1
+statistical significance,statistical,1,1
+statistically significant,statistical,1,1
+statistics,statistical,1,0.8
+stats,statistical,1,0.6
+stem-and-leaf,data visualisation,1,1
+streamgraph,data visualisation,1,1
+summary table,statistical,1,0.6
+survey,statistical,1,1
+symmetrical ,statistical,1,1
+table,data visualisation,1,0.8
+tables,data visualisation,1,0.8
+test statistic,statistical,1,1
+thousand,statistical,1,0.2
+time series ,statistical,1,0.8
+time series ,statistical,1,1
+total,statistical,1,0.6
+transforming variables ,statistical,1,1
+treemap,data visualisation,1,1
+trend,statistical,1,1
+trillion,statistical,1,0.2
+variability or variation or dispersion ,statistical,1,1
+variable,statistical,1,0.6
+variance ,statistical,1,1
+zero values,statistical,1,1
