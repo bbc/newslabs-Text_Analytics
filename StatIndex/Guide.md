@@ -17,7 +17,7 @@ After downloading or cloning the repo, there are four parts to the Stat Index.
 
 
 ## Statistical Dictionary
-The other element of the Stat Index is the [Statistical Dictionary](https://github.com/BBC-News-Labs/Text_Analytics/tree/master/StatIndex/StatIndex-StatDictionary). This contains a collection of statistical terms and data visualisation types. Each of records has a preliminary complexity score from 0 to 1.
+The other element of the Stat Index is the [Statistical Dictionary](https://github.com/BBC-News-Labs/Text_Analytics/tree/master/StatIndex/StatIndex-StatDictionary). This contains a collection of statistical terms and data visualisation types. Each of records has a preliminary complexity score from 0 to 1. The table below details the reasoning behind the preliminary complexity scores.
 
 | Rank          | Score         | Example                                              |
 | ------------- |:-------------:| ---------------------------------------------------: |
