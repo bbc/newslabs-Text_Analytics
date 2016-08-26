@@ -18,7 +18,7 @@ news_text <- gsub('\\n', ' ', news_text)
 news_text <- paste(news_text, collapse = ' ')
 
 # Extract numbers and bind to the text
-numbers <- gregexpr("[0-9]", news_text)
+numbers <- gregexpr("[0-9]+", news_text)
 numbers_intext <- as.numeric(unique(unlist(regmatches(news_text, numbers))))
 rbind(news_text, numbers_intext)
 
