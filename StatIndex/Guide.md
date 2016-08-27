@@ -1,5 +1,5 @@
 # How do you use the Stat Index?       
-This tool has been designed for people who are familiar with R but it can be used by anyone with an interest in statistics and news. The Stat Index takes news content, mines the text and measures the use of statistical insights. It was created at BBC News Labs as part of the [Trust Project](http://thetrustproject.org/). The code and statistical dictionary for the project have been made open source. The Stat Index is being updated regularly to include more data and features.
+This tool has been designed for people who are familiar with R but the Stat Index can be used by anyone with an interest in statistics and news. The Stat Index takes news content, mines the text and measures the use of statistical insights. It was created at BBC News Labs as part of the [Trust Project](http://thetrustproject.org/). The code and statistical dictionary for the project have been made open source. The Stat Index is being updated regularly to include more data and features.
 
 
 ## What is R?
