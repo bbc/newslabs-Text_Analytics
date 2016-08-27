@@ -18,11 +18,15 @@ news_text <- gsub('\\n', ' ', news_text)
 news_text <- paste(news_text, collapse = ' ')
 head(news_text)
 
-# Extract numbers and bind to the text
+# Extract numbers (e.g. from, say '60%')
 numbers <- gregexpr("[0-9]+", news_text)
 numbers_intext <- as.numeric(unique(unlist(regmatches(news_text, numbers))))
-news_text <- rbind(news_text, numbers_intext)
+
+# Extract % from text
+percent_notation <- sub("^[^%]*", "", news_text)
+
+news_text <- rbind(news_text, numbers_intext, percent_notation)
 
 
-#### If looking to analyse your own news URL (e.g. this one from Quartz) - run the code through same as above
+##### If looking to analyse your own news URL (e.g. this one from Quartz) - run the code through same as above
 doc_html <- htmlTreeParse("http://qz.com/762729/poor-data-is-hurting-african-countries-ability-to-make-good-policy-decisions/", useInternal = TRUE)
