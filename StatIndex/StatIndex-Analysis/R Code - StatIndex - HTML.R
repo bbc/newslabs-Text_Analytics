@@ -18,11 +18,11 @@ news_text <- gsub('\\n', ' ', news_text)
 news_text <- paste(news_text, collapse = ' ')
 head(news_text)
 
-# Extract numbers (e.g. from, say '60%')
+# Extract numbers (e.g. from, say '60%') for analysis
 numbers <- gregexpr("[0-9]+", news_text)
 numbers_intext <- as.numeric(unique(unlist(regmatches(news_text, numbers))))
 
-# Extract % from text
+# Extract % from text, also for analysis
 percent_notation <- gsub("[^%]"," ", news_text)
 
 news_text <- paste(news_text, numbers_intext, percent_notation)
