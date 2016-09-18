@@ -29,7 +29,7 @@ NewsStat("http://www.bbc.co.uk/news/uk-37345436")
 ```
 
 #### What can I use NewsStat for?
-Looking for statistics in text can be a difficult and arduous task. NewsStat can make your life easier by quickly extracting key statistics from online news content. You can use [NewsStat](https://github.com/lbuk/NewsStat) for blogs, websites and other non-news as well.
+Looking for statistics in text can be a difficult and arduous task. NewsStat can make your life easier by quickly extracting key statistics from online news content. You can use [NewsStat](https://github.com/lbuk/NewsStat) for blogs, websites and other non-news sites as well.
 
 ---
 
