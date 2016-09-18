@@ -65,8 +65,6 @@ There are three strategies we want to explore initially are...
 - Topic Modelling with a given number (and possibly label) of topics
 - Supervised topic modelling using human curated training sets
 
----
-
 ### (1) Topic Modelling with number of topics as a variable (clustering)
 
 Starting without any prior knowledge: Given a set of news articles, we don't know the number of topics nor the labels. We want to experiment with PCA as well as a couple of clustering methods to infer the number of topics from the the word frequency distributions in news articles.
