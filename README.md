@@ -50,6 +50,7 @@ MoreNewsStat("https://www.theguardian.com/business/2016/sep/04/morrisons-cut-foo
 ```
 #### What can I use NewsStat for?
 Looking for statistics in text can be a difficult and arduous task. NewsStat can make your life easier by quickly extracting key statistics from online news content. NewsStat can quickly find and extract those key insights. You can use NewsStat for blogs, websites and other non-news as well.
+
 ---
 
 ## Topic Modelling
