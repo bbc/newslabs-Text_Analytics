@@ -22,7 +22,7 @@ While the Stat Index makes use of Freebird, a small internal tool being created 
 The Stat Index will be considered a success if it is used by the public and Journalists to learn more about the relationship between trust, statistics and news. The prototype is in testing phase after inital tests were successful.  The data and code are in development and features are being added. This repository will be regularly updated to incorporate these changes and collaboration is more than welcome. The Statistical Data Dictionary, for example, is a work in progress and will change as more research is undertaken.
 
 ### [NewsStat](https://github.com/lbuk/NewsStat)
-NewsStat is an R package and set of functions that allow you to extract text containing key statistics from online news. Simply enter a URL and it will return sentences containing stats. It was developed following a Google Fellowship at BBC News Labs. Using NewsStat is as easy as:
+NewsStat is an R package and set of functions that allow you to extract text containing key statistics from online news. Simply enter a URL and it will return sentences containing stats. It was developed following a Google Fellowship at BBC News Labs. Once it's been installed, using NewsStat is as easy as:
 
 ```
 NewsStat("http://www.bbc.co.uk/news/uk-37345436")
